@@ -7,7 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{FC436A29-C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{16836FA8-99B1-42DA-A0A6-E1601BD17FB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetUtilityKit.Nuget", "Src\NetUtilityKit.Nuget\NetUtilityKit.Nuget.csproj", "{FA511BB5-E543-4C05-83C5-EA085B9EC5CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetUtilityKit.Nuget", "Src\NetUtilityKit.Nuget\NetUtilityKit.Nuget.csproj", "{FA511BB5-E543-4C05-83C5-EA085B9EC5CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetUtilityKit.UnitTest", "Test\NetUtilityKit.UnitTest\NetUtilityKit.UnitTest.csproj", "{3DC1DA4B-04AF-4769-8D9B-0040D783F612}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,12 +21,17 @@ Global
 		{FA511BB5-E543-4C05-83C5-EA085B9EC5CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA511BB5-E543-4C05-83C5-EA085B9EC5CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA511BB5-E543-4C05-83C5-EA085B9EC5CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DC1DA4B-04AF-4769-8D9B-0040D783F612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DC1DA4B-04AF-4769-8D9B-0040D783F612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DC1DA4B-04AF-4769-8D9B-0040D783F612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DC1DA4B-04AF-4769-8D9B-0040D783F612}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FA511BB5-E543-4C05-83C5-EA085B9EC5CA} = {16836FA8-99B1-42DA-A0A6-E1601BD17FB3}
+		{3DC1DA4B-04AF-4769-8D9B-0040D783F612} = {FC436A29-C286-49C1-8FD2-451830DB921E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B5E6D83D-75E8-48C5-94FD-5BD61A41C649}
