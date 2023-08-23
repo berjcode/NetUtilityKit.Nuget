@@ -22,4 +22,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="GlobalResponseModel\LibraryTest\" />
+  </ItemGroup>
+
 </Project>
