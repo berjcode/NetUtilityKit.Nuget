@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="GlobalResponseModel\LibraryTest\" />
+    <ProjectReference Include="..\..\..\Source\NetUtilityKit.LibraryNuget\NetUtilityKit.NugetPackage\NetUtilityKit.NugetPackage.csproj" />
   </ItemGroup>
 
 </Project>
