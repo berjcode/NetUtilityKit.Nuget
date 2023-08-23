@@ -1,9 +1,15 @@
+using NetUtilityKit.NugetPackage.GlobalResponseModel;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
+var successResponse = ResponseModel<int>.SuccessResponse(42, 200);
+var failureResponse = ResponseModel<int>.ErrorResponse("An error occurred", 500);
+
+app.MapGet("/", () => successResponse.Message);
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
