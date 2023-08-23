@@ -4,6 +4,37 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageId>NetUtilityKit</PackageId>
+    <Title>NetUtilityKit </Title>
+    <Version>1.0.0</Version>
+    <Authors>berjcode</Authors>
+    <Company>berjcode</Company>
+    <Product>NetUtilityKit</Product>
+    <Description>It allows you to develop your projects quickly. It contains many supporting structures.
+Contact us if you want to support.</Description>
+    <Copyright>2023</Copyright>
+    <PackageProjectUrl>https://github.com/berjcode/NetUtilityKit.Nuget</PackageProjectUrl>
+    <PackageIcon>NETUTILITY.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/berjcode/NetUtilityKit.Nuget</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>net; utility; net core; net framework, fast,netutility</PackageTags>
+    <PackageReleaseNotes>In this version, the responsemodel feature has been added.</PackageReleaseNotes>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <NeutralLanguage>tk</NeutralLanguage>
+    <FileVersion>1.0.0</FileVersion>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\..\Downloads\NETUTILITY.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
