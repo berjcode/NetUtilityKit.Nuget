@@ -17,6 +17,7 @@ Contact us if you want to support.
 # ResponseModel:
 ```
 It ensures that the controller is clean and legible.
+It allows you to give a stronger and different response. Different Overloads are available.
 There is no need to do if else in the controller. You can manage this situation from a different layer.
 If you don't want to repeat yourself, you can manage the controller part with a base class.
 A simple example is presented.

@@ -24,9 +24,14 @@ Contact us if you want to support.</Description>
     <NeutralLanguage>tk</NeutralLanguage>
     <FileVersion>1.0.0</FileVersion>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\..\..\..\..\..\Masaüstü\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\..\..\..\..\..\..\Downloads\NETUTILITY.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
