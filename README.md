@@ -7,22 +7,23 @@ Contact us if you want to support.
 
 # Install 
 ```
-
   dotnet add package 
 ```
 
 
 # Package Included
 
-## ResponseModel:
+
+# ResponseModel:
 ```
 It ensures that the controller is clean and legible.
 There is no need to do if else in the controller. You can manage this situation from a different layer.
-
+If you don't want to repeat yourself, you can manage the controller part with a base class.
+A simple example is presented.
 ```
 
 
-# Use ResponseModel
+## Use ResponseModel
 
 
 ```
@@ -56,13 +57,9 @@ Example- Controller
         };
     }
 
-
 ```
 
-
-
   
-      
 
 
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
