@@ -29,19 +29,19 @@ A simple example is presented.
 
 ```
 Example- Service
-    public async Task<ResponseDto<bool>> CreateItemAsync(CreateItemDto createItemDto, CancellationToken cancellationToken)
+    public async Task<ResponseModel<bool>> CreateItemAsync(CreateItemDto createItemDto, CancellationToken cancellationToken)
     {
         try
         {
             await AddItemAsync(createItemDto, cancellationToken);
 
-            return ResponseDto<bool>.SuccessResponse(true, 201);
+            return ResponseModel<bool>.SuccessResponse(true, 201);
         }
         catch (Exception ex)
         {
             _logger.LogError(ex.Message);
 
-            return ResponseDto<bool>.ErrorResponse($"{ex.Message}", 500);
+            return ResponseModel<bool>.ErrorResponse($"{ex.Message}", 500);
         }
     }
 
