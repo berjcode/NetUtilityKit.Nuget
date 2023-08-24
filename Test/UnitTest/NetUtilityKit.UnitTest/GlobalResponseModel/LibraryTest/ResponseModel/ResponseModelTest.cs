@@ -1,7 +1,7 @@
 ﻿using NetUtilityKit.NugetPackage.GlobalResponseModel;
 using Xunit;
 
-namespace NetUtilityKit.UnitTest.GlobalResponseModel.LibraryTest;
+namespace NetUtilityKit.UnitTest.GlobalResponseModel.LibraryTest.ResponseModel;
 
 public class ResponseModelTest
 {
@@ -14,7 +14,7 @@ public class ResponseModelTest
         var message = "Success message";
 
         // Act
-        var response = ResponseModel<bool>.SuccessResponse(true,statusCode, message);
+        var response = ResponseModel<bool>.SuccessResponse(true, statusCode, message);
 
         // Assert
         Assert.True(response.IsSuccessful);
@@ -121,7 +121,7 @@ public class ResponseModelTest
         var message = "Success message";
 
         // Act
-        var response = ResponseModel<string>.IsSuccessResponse("data", statusCode,message);
+        var response = ResponseModel<string>.IsSuccessResponse("data", statusCode, message);
 
         // Assert
         Assert.True(response.IsSuccessful);
