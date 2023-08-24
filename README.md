@@ -7,7 +7,7 @@ Contact us if you want to support.
 
 # Install 
 ```
-  dotnet add package 
+ dotnet add package NetUtilityKit --version 1.0.1
 ```
 
 
@@ -22,6 +22,14 @@ There is no need to do if else in the controller. You can manage this situation 
 If you don't want to repeat yourself, you can manage the controller part with a base class.
 A simple example is presented.
 ```
+
+# ExpressionParser:
+```
+Converting the filtering expression you receive as a string by the client to the expression type.
+In this way, you can quickly perform powerful filtering operations with a single method.
+You may need to set limits on filters for security.
+```
+
 
 
 ## Use ResponseModel
@@ -59,8 +67,33 @@ Example- Controller
     }
 
 ```
-
+## Use ExpressionParser
   
+  ```
+Example - Request Query And Body
+
+public sealed record GetAllFilterCustomerQuery(
+    string Expression
+);
+
+Example- Service
+
+    public async Task<List<Customer>> GetAllFilter(GetAllFilterCustomerQuery request)
+    {
+       
+        var expression = ExpressionParser.ParseExpression<Customer>(request.Expression);
+
+        var query = _queryRepository.GetAll().Where(expression).Include(p => p.CustomerType).ToListAsync();    
+
+        return result;
+
+    }
+
+Example - Request
+{
+    "expression": "x=> x.IsActive == true"
+}
+```
 
 
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
